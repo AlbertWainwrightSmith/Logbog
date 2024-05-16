@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
+    <title>Selvkørende bil</title>
+</head>
+<body>
+    <header class="header2">
+        <h1 class="title"> Projekt - Selvkørende bil</h1>
+    </header>
+
+    <section class="content">
+        <h2 class="subtitle">Lavet i samarbejde med Tristan</h2>
+    </section>
+        <div class="problem">
+            <h3>Prøv programmet her:</h3>
+            <a href="bilVIRKER.html"class="button">Selvkørende bil </a>
+        </div>
+    
+    
+        <div class="problem">
+            <h3>Problem:</h3>
+    <p>Vi skal skabe et program, hvor en bil skal kunne navigere en virtuel og skal kunne stoppe for rødt 
+        <br>
+        Bilen skal have input fra kameraet</p>
+
+    <h3>Hvordan løser vi problemet</h3>
+        <ul>
+            <li>Vores program, kan genkende og registrere billeder af diverse skilte</li>
+            <li>Det skal kunne handle efter hvad skiltet fortæller det</li>
+        </ul>
+    
+
+    <h3>Her ses et uddrag fra midten af programmet, med bilen værende stillestående</h3>  
+    <img src="BilSpil.png" style="width: 50%; height: auto">
+  
+
+    <br>
+    <h1>Eksempel på kode</h1>
+    <img src="BilKode.png" style="width: 20%; height: auto">
+        <ol>
+            <li> Indsætter billedet af bilen, på koordinater på vejen, som kan ændres vha variablen x og y, og angiver størrelsen</li>
+            <li> Spørg som programmet registrerer at labelet er "Right"</li>
+            <li> Ændre x med en halv af variablen z</li>
+            <li> Ændre z med konstanten a (acceleration)</li>
+            <li> Sæt billedet af bilen til img3 </li>
+            <li> Spørg som programmet registrerer at labelet er "Left"</li>
+            <li> Ændre x med minus en halv af variablen z</li>
+            <li> Ændre z med konstanten a (acceleration)</li>
+            <li> Sæt billedet af bilen til img4 </li>
+            <li> Spørg som programmet registrerer at labelet er "Straight"</li>
+            <li> Ændre y med minus en halv af variablen z</li>
+            <li> Ændre z med konstanten a (acceleration)</li>
+            <li> Sæt billedet af bilen til img2 </li>
+            <li> Spørg som programmet registrerer at labelet er "Reverse"</li>
+            <li> Ændre y med en halv af variablen z</li>
+            <li> Ændre z med konstanten a (acceleration)</li>
+            <li> Sæt billedet af bilen til img2 </li>
+            <li> Spørg som programmet registrerer at labelet er "Nothing"</li>
+            <li> Sæt variablen z til 1</li>
+            <li> Sæt a (acceleration) til 0.15</li>
+        </ol>
+
+        <h3>Eventuelle ændringer</h3>
+        <p>Bedre deacceleration og bedre grafik</p>
+
+    </div>
+
+        <section class="footer">
+            <h2 class="subtitle">Links til projekt-undersider</h2>
+                <div class="buttons">
+                    <a href="index.html"class="button"> Tilbage til forsiden </a>
+                    <a href="webteknologier.html"class="button"> Projektbeskrivelse webteknologier </a>
+                    <a href="Pandaspil.html"class="button"> Pandaspil </a>
+                    <a href="Vani.html"class="button"> Billedemanipulation </a>
+                    <a href="Flashcard.html"class="button"> Flashcard </a>    
+                </div>
+            </section>
+        
+    
+ </body>
+ </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <link rel="stylesheet" href="myStyle.css">
+    <title> Projekt - Billedemanipulation </title>
+</head>
+<body>
+    
+
+    <body>
+        <header class="header2">
+            <h1 class="title"> Projekt - Billedemanipulation </h1>
+        </header>
+    
+        <section class="content">
+            <h2 class="subtitle"> Lavet i samarbejde med Magnus og Elmer </h2>
+        </section>
+           
+    
+            <div class="problem">
+                <h3>Problem:</h3>
+        <p>Vi har lavet et projekt hvor vi skulle lave programmer der kunne redigere billeder, med fokus på pixelænding </p>
+        
+        <h3>Hvordan løser vi problemet</h3>
+            <ul>
+                <li>Vores program skaber 2 billeder hvori det ene manipulere</li>
+                <li>Vores program bruger lokationen af musen til at ændrer farveværdierne både ved bevægelse, både på langs og på tværs</li>
+            </ul>
+        
+    
+    
+    
+        <h3>Se programmet her</h3>
+        <p>Her ses et uddrag fra midten af programmet med det originale billede (bemærk at dette billede er fra før ændringen af pixelstørrelsen)</p>  
+        <img src="Vani.png" style="width: 40%; height: auto">
+      
+        <br>
+        <h3>Eksempel på kode</h3>
+        <img src="VaniKode.png" style="width: 25%; height: auto">
+        
+        <br>        
+        <ol>
+            <li>Aktiveres vis functionen ownFilter aktiveres</li>
+            <li>Hvis at i er mellem 0 og w (width), skal der ligges pixelstørrelsen til i</li>
+            <li>Hvis j er mellem 0 og h (height) skal der ligges pixelstørrelsen til j</li>
+            <li>c får pixlens røde værdi, for den nuværende i og j værdi i koordinater</li>
+            <li>c får pixlens grønne værdi, for den nuværende i og j værdi i koordinater</li>
+            <li>c får pixlens blå værdi, for den nuværende i og j værdi i koordinater</li>
+            <li>Billedet fyldes den enkelte pixels individuelle røde værdi ganget med mussens x-værdi divideret i 100, og med  den enkelte pixels individuelle grønne værdi ganget med mussens y-værdi divideret i 100</li>
+            <li>Dette tegner et rektangel på position (i, j) med størrelsen pixelSize x pixelSize</li>
+            <li>Sæt peanuttens xSpeed til at være 1 højere</li>
+            <li>Slut løkken</li>
+            <li>Dette starter definitionen af en funktion ved navn getPixelValue</li>
+            <li>Dette beregner indekset til den ønskede farveværdi i billedets pixelarray. Det multiplicerer den lodrette position j med bredden af billedet w, lægger den vandrette position i til, ganger med 4 (fordi hver pixel kræver 4 pladser i arrayet - rød, grøn, blå og alfa) og tilføjer derefter den ønskede farvekanal n</li>
+            <li>Den returnerer den ønskede farveværdi</li>
+        </ol>
+
+        <h3>Eventuelle forbedringer</h3>
+        <p>Bedre grafik i form af højere resolution, evt en måde at ændre pixelstørrelsen på inde på programmet, flere muligheder for ændringer</p>
+
+        </div>
+    
+    
+    
+        <section class="footer">
+        <h2 class="subtitle">Links til projekt-undersider</h2>
+            <div class="buttons">
+                <a href="index.html"class="button"> Tilbage til forsiden </a>
+                <a href="webteknologier.html"class="button"> Projektbeskrivelse webteknologier </a>
+                <a href="Pandaspil.html"class="button"> Panda spil </a>
+                <a href="Bil.html"class="button"> Selvkørende bil </a>
+                <a href="Flashcard.html"class="button"> Flashcard </a>    
+            </div>
+        </section>
+    
+     </body>
+
+
+</body>
+</html>
